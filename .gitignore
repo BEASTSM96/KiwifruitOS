@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+#Kiwi Stuff
+bin
+**/bin
+bin/
+CrossCompiler
+isodir
+.vs
+.vscode
