@@ -39,3 +39,7 @@ CrossCompiler
 isodir
 .vs
 .vscode
+*.iso
+*.log
+log.txt
+vhc
