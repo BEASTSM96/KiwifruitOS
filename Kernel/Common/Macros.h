@@ -3,9 +3,9 @@
 #include <stddef.h>
 
 #define PACKED [[gnu::packed]]
-#define __NORETURN __attribute__ ((noreturn))
-#define __MALLOC __attribute__ ((malloc))
-#define __PACKED __attribute__ ((packed))
+#define __NORETURN__ __attribute__ ((noreturn))
+#define __MALLOC__ __attribute__ ((malloc))
+#define __PACKED__ __attribute__ ((packed))
 #ifdef __cplusplus
 #define _C_EXTERN extern "C" {
 #define _C_END }
@@ -24,8 +24,8 @@
 			write_string("Assertion failed ('");							\
 			write_string(#msg);												\
 			write_string("')\n"); 											\
-			write_string((const char*)__FILE__, 0x4); 						\
-			write_string((unsigned)__LINE__, 0x4); 						\
+			write_string((const char*)__FILE__); 						\
+			 						\
 			sti();															\
 		}
 #else
